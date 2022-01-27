@@ -1,0 +1,78 @@
+/* below for set font */
+
+@font-face {
+    font-family: "Vazir";
+    src: url('../fonts/Vazir-FD.eot');
+    src: url('../fonts/Vazir-FD.eot') format('FontName-opentype'), url('../fonts/Vazir-FD.woff') format('woff'), url('../fonts/Vazir-FD.woff2') format('woff2'), url('../fonts/Vazir-FD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Vazir';
+}
+
+.myfont {
+    font-family: 'Vazir', Helvetica, Arial, sans-serif;
+}
+
+/* 
+below for Image Top and image Profile
+*/
+
+.simg_top {
+    width: auto;
+    height: 300px;
+    background: url(../img/background.jpg);
+    border-radius: 40px;
+}
+
+.mcontainer {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 600px;
+}
+
+.simg_my {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    padding: 4px;
+    box-shadow: 0 0 15px 1px #fff;
+    background-color: white;
+    transition: ease .5s;
+}
+
+.simg_my:hover {
+    transition: ease .5s;
+    box-shadow: 0 0 30px 1px #fff;
+}
+
+@media(max-width:600px) {
+    .simg_my {
+        width: 200px;
+        height: 200px;
+    }
+    .mcontainer {
+        width: 80vw;
+    }
+}
+
+/* 
+below is Dark Mode
+*/
+
+.form-check {
+    transform: scale(1.1);
+}
+
+.bg-dark, .text-light {
+    transition: 0.5s;
+}
+
+.btn{
+    display: none;
+}
